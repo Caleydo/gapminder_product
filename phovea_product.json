@@ -17,6 +17,26 @@
         "type": "repo",
         "repo": "Caleydo/gapminder",
         "branch": "master"
+      },
+	  {
+        "name": "phovea_security_flask",
+        "repo": "phovea/phovea_security_flask",
+        "branch": "develop"
+      },
+	  {
+        "name": "phovea_data_redis",
+        "repo": "phovea/phovea_data_redis",
+        "branch": "develop"
+      },
+      {
+        "name": "phovea_data_mongo",
+        "repo": "phovea/phovea_data_mongo",
+        "branch": "develop"
+      },
+      {
+        "name": "phovea_clue",
+        "repo": "phovea/phovea_clue",
+        "branch": "develop"
       }
     ]
   }
