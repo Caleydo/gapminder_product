@@ -11,19 +11,13 @@
     "label": "gapminder_server",
     "repo": "phovea/phovea_server",
     "branch": "develop",
-    "additional": [],
-    "data": [
+    "additional": [
       {
-        "type": "repo",
-        "repo": "Caleydo/gapminder",
-        "branch": "master"
-      },
-	  {
         "name": "phovea_security_flask",
         "repo": "phovea/phovea_security_flask",
         "branch": "develop"
       },
-	  {
+      {
         "name": "phovea_data_redis",
         "repo": "phovea/phovea_data_redis",
         "branch": "develop"
@@ -38,6 +32,14 @@
         "repo": "phovea/phovea_clue",
         "branch": "develop"
       }
+    ],
+    "data": [
+      {
+        "type": "repo",
+        "repo": "Caleydo/gapminder",
+        "branch": "master"
+      },
+      
     ]
   }
 ]
