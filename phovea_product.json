@@ -1,0 +1,23 @@
+[
+  {
+    "type": "web",
+    "label": "gapminder",
+    "repo": "Caleydo/gapminder",
+    "branch": "master",
+    "additional": []
+  },
+  {
+    "type": "api",
+    "label": "gapminder_server",
+    "repo": "phovea/phovea_server",
+    "branch": "develop",
+    "additional": [],
+    "data": [
+      {
+        "type": "repo",
+        "repo": "Caleydo/gapminder",
+        "branch": "master"
+      }
+    ]
+  }
+]
