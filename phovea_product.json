@@ -3,8 +3,29 @@
     "type": "web",
     "label": "gapminder",
     "repo": "Caleydo/gapminder",
-    "branch": "master",
-    "additional": []
+    "branch": "provenance_steering",
+    "additional": [
+      {
+        "name": "phovea_core",
+        "repo": "phovea/phovea_core",
+        "branch": "provenance_steering"
+      },
+      {
+        "name": "phovea_clue",
+        "repo": "phovea/phovea_clue",
+        "branch": "provenance_steering"
+      },
+      {
+        "name": "phovea_d3",
+        "repo": "phovea/phovea_d3",
+        "branch": "provenance_steering"
+      },
+      {
+        "name": "phovea_ui",
+        "repo": "phovea/phovea_ui",
+        "branch": "provenance_steering"
+      }
+    ]
   },
   {
     "type": "api",
@@ -30,14 +51,14 @@
       {
         "name": "phovea_clue",
         "repo": "phovea/phovea_clue",
-        "branch": "develop"
+        "branch": "provenance_steering"
       }
     ],
     "data": [
       {
         "type": "repo",
         "repo": "Caleydo/gapminder",
-        "branch": "master"
+        "branch": "provenance_steering"
       }
     ]
   }
