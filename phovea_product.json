@@ -3,27 +3,27 @@
     "type": "web",
     "label": "gapminder",
     "repo": "Caleydo/gapminder",
-    "branch": "provenance_steering",
+    "branch": "thinkh/provenance_retrieval",
     "additional": [
       {
         "name": "phovea_core",
         "repo": "phovea/phovea_core",
-        "branch": "provenance_steering"
+        "branch": "thinkh/provenance_retrieval"
       },
       {
         "name": "phovea_clue",
         "repo": "phovea/phovea_clue",
-        "branch": "provenance_steering"
+        "branch": "thinkh/provenance_retrieval"
       },
       {
         "name": "phovea_d3",
         "repo": "phovea/phovea_d3",
-        "branch": "provenance_steering"
+        "branch": "thinkh/provenance_retrieval"
       },
       {
         "name": "phovea_ui",
         "repo": "phovea/phovea_ui",
-        "branch": "provenance_steering"
+        "branch": "thinkh/provenance_retrieval"
       }
     ]
   },
@@ -36,7 +36,7 @@
       {
         "name": "phovea_security_flask",
         "repo": "phovea/phovea_security_flask",
-        "branch": "develop"
+        "branch": "thinkh/provenance_retrieval"
       },
       {
         "name": "phovea_data_redis",
@@ -51,14 +51,14 @@
       {
         "name": "phovea_clue",
         "repo": "phovea/phovea_clue",
-        "branch": "provenance_steering"
+        "branch": "thinkh/provenance_retrieval"
       }
     ],
     "data": [
       {
         "type": "repo",
         "repo": "Caleydo/gapminder",
-        "branch": "provenance_steering"
+        "branch": "thinkh/provenance_retrieval"
       }
     ]
   }
