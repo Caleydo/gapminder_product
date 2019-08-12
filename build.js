@@ -220,7 +220,7 @@ function cloneRepo(p, cwd) {
     extras: '--depth 1',
     dir: p.name,
     cwd
-  }, toRepoUrlWithUser(p.repo));
+  }, cwd, toRepoUrlWithUser(p.repo)); // pass repo url as argument
 }
 
 function resolvePluginType(p, dir) {
