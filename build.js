@@ -213,8 +213,12 @@ function cloneRepo(p, cwd) {
   p.name = p.name || fromRepoUrl(p.repo);
   p.repo = p.repo || `phovea/${p.name}`;
   p.branch = p.branch || 'master';
-  console.log(cwd, chalk.blue(`running git clone --depth 1 -b ${p.branch} ${toRepoUrl(p.repo)} ${p.name}`));
-  return spawn('git', ['clone', '--depth', '1', '-b', p.branch, toRepoUrlWithUser(p.repo), p.name], {cwd});
+  return yo('clone-repo', {
+    branch: p.branch,
+    extras: '--depth 1',
+    dir: p.name,
+    cwd
+  }, toRepoUrlWithUser(p.repo));
 }
 
 function resolvePluginType(p, dir) {
