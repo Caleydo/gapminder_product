@@ -3,7 +3,7 @@
     "type": "web",
     "label": "gapminder",
     "repo": "Caleydo/gapminder",
-    "branch": "use-caret-version-deps",
+    "branch": "master",
     "additional": []
   },
   {
