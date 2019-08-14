@@ -190,17 +190,19 @@ function createQuietTerminalAdapter() {
  * runs yo internally
  * @param generator
  * @param options
- * @param cwd
+ * @param {string} cwd
+ * @param {string[]|string} args
  */
-function yo(generator, options, cwd) {
+function yo(generator, options, cwd, args) {
   const yeoman = require('yeoman-environment');
   // call yo internally
   const yeomanEnv = yeoman.createEnv([], {cwd, env}, quiet ? createQuietTerminalAdapter() : undefined);
   yeomanEnv.register(require.resolve('generator-phovea/generators/' + generator), 'phovea:' + generator);
+  const _args = Array.isArray(args) ? args.join(' ') : args || '';
   return new Promise((resolve, reject) => {
     try {
       console.log(cwd, chalk.blue('running yo phovea:' + generator));
-      yeomanEnv.run('phovea:' + generator, options, resolve);
+      yeomanEnv.run(`phovea:${generator} ${_args}`, options, resolve);
     } catch (e) {
       console.error('error', e, e.stack);
       reject(e);
@@ -213,8 +215,12 @@ function cloneRepo(p, cwd) {
   p.name = p.name || fromRepoUrl(p.repo);
   p.repo = p.repo || `phovea/${p.name}`;
   p.branch = p.branch || 'master';
-  console.log(cwd, chalk.blue(`running git clone --depth 1 -b ${p.branch} ${toRepoUrl(p.repo)} ${p.name}`));
-  return spawn('git', ['clone', '--depth', '1', '-b', p.branch, toRepoUrlWithUser(p.repo), p.name], {cwd});
+  return yo('clone-repo', {
+    branch: p.branch,
+    extras: '--depth 1',
+    dir: p.name,
+    cwd
+  }, cwd, toRepoUrlWithUser(p.repo)); // pass repo url as argument
 }
 
 function resolvePluginType(p, dir) {
