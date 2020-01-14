@@ -23,7 +23,7 @@ jobs:
           command: |
             virtualenv ~/venv
             . ~/venv/bin/activate
-            pip install awscli-1.16.312
+            pip install awscli==1.16.312
       - save_cache:
           key: awscli-1.16.312
           paths:
