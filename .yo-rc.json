@@ -2,8 +2,14 @@
   "generator-phovea": {
     "type": "product",
     "name": "gapminder_product",
-    "author": "Samuel Gratzl",
+    "author": "datavisyn",
     "today": "Fri, 03 Feb 2017 08:30:49 GMT",
-    "githubAccount": "Caleydo"
+    "githubAccount": "datavisyn",
+    "promptValues": {
+      "authorName": "datavisyn",
+      "authorEmail": "contact@datavisyn.io",
+      "authorUrl": "https://www.datavisyn.io/",
+      "githubAccount": "datavisyn"
+    }
   }
 }
