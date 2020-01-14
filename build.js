@@ -202,7 +202,9 @@ function yo(generator, options, cwd, args) {
   return new Promise((resolve, reject) => {
     try {
       console.log(cwd, chalk.blue('running yo phovea:' + generator));
-      yeomanEnv.run(`phovea:${generator} ${_args}`, options, resolve);
+      yeomanEnv.lookup(() => {
+        yeomanEnv.run(`phovea:${generator} ${_args}`, options, resolve);
+      });
     } catch (e) {
       console.error('error', e, e.stack);
       reject(e);
