@@ -7,7 +7,7 @@ Installation
 ------------
 
 ```
-git clone https://github.com/Caleydo/gapminder_product.git
+git clone git@github.com:Caleydo/gapminder_product.git
 cd gapminder_product
 npm install
 ```
@@ -38,7 +38,7 @@ This repository is part of **[Phovea](http://phovea.caleydo.org/)**, a platform 
 [phovea-url]: https://phovea.caleydo.org
 [npm-image]: https://badge.fury.io/js/gapminder_product.svg
 [npm-url]: https://npmjs.org/package/gapminder_product
-[travis-image]: https://travis-ci.org/Caleydo/gapminder_product.svg?branch=master
-[travis-url]: https://travis-ci.org/Caleydo/gapminder_product
-[daviddm-image]: https://david-dm.org/Caleydo/gapminder_product/status.svg
-[daviddm-url]: https://david-dm.org/Caleydo/gapminder_product
+[travis-image]: https://travis-ci.org/datavisyn/gapminder_product.svg?branch=master
+[travis-url]: https://travis-ci.org/datavisyn/gapminder_product
+[daviddm-image]: https://david-dm.org/datavisyn/gapminder_product/status.svg
+[daviddm-url]: https://david-dm.org/datavisyn/gapminder_product
