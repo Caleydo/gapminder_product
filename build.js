@@ -888,7 +888,8 @@ if (require.main === module) {
     chain.splice(0, chain.length, ...argv._);
   }
 
-  console.log(chalk.blue('executing chain:'), JSON.stringify(chain, null, ' '));
+  console.log(chalk.blue('executing chain:'), JSON.stringify(chain, null, ' '))
+  console.log(chalk.blue('list of possible steps:'), JSON.stringify(steps, null, ' '));
   const toExecute = asChain(steps, chain);
   const launch = runChain(toExecute, catchErrors);
   if (!argv.dryRun) {
