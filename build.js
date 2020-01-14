@@ -798,7 +798,9 @@ if (require.main === module) {
     }
 
     const needsWorskpace = (isWeb && hasAdditional) || isServer;
-    steps[`prepare:${suffix}`] = needsWorskpace ? () => catchProductBuild(p, createWorkspace(p)) : null;
+    if(needsWorskpace) {
+      steps[`prepare:${suffix}`] = () => catchProductBuild(p, createWorkspace(p));
+    }
 
     if (isWeb) {
       steps[`install:${suffix}`] = () => catchProductBuild(p, installWebDependencies(p));
