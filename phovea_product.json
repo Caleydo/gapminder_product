@@ -10,27 +10,27 @@
     "type": "api",
     "label": "gapminder_server",
     "repo": "phovea/phovea_server",
-    "branch": "python_3.7",
+    "branch": "develop",
     "additional": [
       {
         "name": "phovea_security_flask",
         "repo": "phovea/phovea_security_flask",
-        "branch": "python_3.7"
+        "branch": "develop"
       },
       {
         "name": "phovea_data_redis",
         "repo": "phovea/phovea_data_redis",
-        "branch": "python_3.7"
+        "branch": "develop"
       },
       {
         "name": "phovea_data_mongo",
         "repo": "phovea/phovea_data_mongo",
-        "branch": "python_3.7"
+        "branch": "develop"
       },
       {
         "name": "phovea_clue",
         "repo": "phovea/phovea_clue",
-        "branch": "python_3.7"
+        "branch": "develop"
       }
     ],
     "data": [
