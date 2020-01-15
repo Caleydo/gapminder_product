@@ -10,7 +10,7 @@
     "type": "api",
     "label": "gapminder_server",
     "repo": "phovea/phovea_server",
-    "branch": "develop",
+    "branch": "stoiber/update_debian_url_in_Dockerfile",
     "additional": [
       {
         "name": "phovea_security_flask",
