@@ -3,41 +3,41 @@
     "type": "web",
     "label": "gapminder",
     "repo": "Caleydo/gapminder",
-    "branch": "develop",
+    "branch": "v3.0.0",
     "additional": []
   },
   {
     "type": "api",
     "label": "gapminder_server",
     "repo": "phovea/phovea_server",
-    "branch": "develop",
+    "branch": "v5.0.0",
     "additional": [
       {
         "name": "phovea_security_flask",
         "repo": "phovea/phovea_security_flask",
-        "branch": "develop"
+        "branch": "v5.0.0"
       },
       {
         "name": "phovea_data_redis",
         "repo": "phovea/phovea_data_redis",
-        "branch": "develop"
+        "branch": "v5.0.0"
       },
       {
         "name": "phovea_data_mongo",
         "repo": "phovea/phovea_data_mongo",
-        "branch": "develop"
+        "branch": "v5.0.0"
       },
       {
         "name": "phovea_clue",
         "repo": "phovea/phovea_clue",
-        "branch": "develop"
+        "branch": "v5.0.0"
       }
     ],
     "data": [
       {
         "type": "repo",
         "repo": "Caleydo/gapminder",
-        "branch": "develop"
+        "branch": "v3.0.0"
       }
     ]
   }
