@@ -1,6 +1,6 @@
-gapminder_product [![Phovea][phovea-image]][phovea-url] [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+gapminder_product
 =====================
-
+ [![Phovea][phovea-image]][phovea-url] [![NPM version][npm-image]][npm-url] [![Build Status][circleci-image]][circleci-url]
 
 
 Installation
@@ -40,5 +40,3 @@ This repository is part of **[Phovea](http://phovea.caleydo.org/)**, a platform 
 [npm-url]: https://npmjs.org/package/gapminder_product
 [circleci-image]: https://circleci.com/gh/Caleydo/gapminder_product.svg?style=shield
 [circleci-url]: https://circleci.com/gh/Caleydo/gapminder_product
-[daviddm-image]: https://david-dm.org/Caleydo/gapminder_product/status.svg
-[daviddm-url]: https://david-dm.org/Caleydo/gapminder_product
