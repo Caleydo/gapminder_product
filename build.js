@@ -697,7 +697,8 @@ function buildServer(p) {
   // copy main deploy thing and create a docker out of it
   act = act
     .then(() => fs.ensureDirAsync(`${p.tmpDir}/deploy`))
-    .then(() => fs.copyAsync(`${p.tmpDir}/${p.name}/deploy`, `${p.tmpDir}/api/deploy/`));
+    .then(() => fs.copyAsync(`${p.tmpDir}/${p.name}/deploy`, `${p.tmpDir}/api/deploy/`))
+    .then(() => console.log('server files copied to ' + `${p.tmpDir}/api/deploy/`));
 
   return act;
 }
