@@ -693,6 +693,12 @@ function buildServer(p) {
     .then(() => fs.ensureDirAsync(`${p.tmpDir}/build/source`))
     .then(() => fs.copyAsync(`${p.tmpDir}/${p.name}/build/source`, `${p.tmpDir}/build/source/`))
     .then(() => Promise.all(p.additional.map((pi) => fs.copyAsync(`${p.tmpDir}/${pi.name}/build/source`, `${p.tmpDir}/build/source/`))))
+
+  // copy main deploy thing and create a docker out of it
+  act = act
+    .then(() => fs.ensureDirAsync(`${p.tmpDir}/deploy`))
+    .then(() => fs.copyAsync(`${p.tmpDir}/${p.name}/deploy`, `${p.tmpDir}/api/deploy/`));
+
   return act;
 }
 
