@@ -623,7 +623,7 @@ function buildDockerImage(p) {
       buildArgs += ` --build-arg ${lkey}='${process.env[key]}'`;
     }
   }
-  const dockerFile = `deploy${p.type === 'web' ? '/' + p.type : ''}/Dockerfile`;
+  const dockerFile = `deploy${p.type === 'web' || p.type === 'api' ? '/' + p.type : ''}/Dockerfile`;
   console.log('use dockerfile: ' + dockerFile);
   // patch the docker file with the with an optional given baseImage
   return Promise.resolve(patchDockerfile(p, `${p.tmpDir}${buildInSubDir ? '/' + p.name : ''}/${dockerFile}`))
@@ -692,13 +692,7 @@ function buildServer(p) {
   act = act
     .then(() => fs.ensureDirAsync(`${p.tmpDir}/build/source`))
     .then(() => fs.copyAsync(`${p.tmpDir}/${p.name}/build/source`, `${p.tmpDir}/build/source/`))
-    .then(() => Promise.all(p.additional.map((pi) => fs.copyAsync(`${p.tmpDir}/${pi.name}/build/source`, `${p.tmpDir}/build/source/`))));
-
-  // copy main deploy thing and create a docker out of it
-  act = act
-    .then(() => fs.ensureDirAsync(`${p.tmpDir}/deploy`))
-    .then(() => fs.copyAsync(`${p.tmpDir}/${p.name}/deploy`, `${p.tmpDir}/deploy/`));
-
+    .then(() => Promise.all(p.additional.map((pi) => fs.copyAsync(`${p.tmpDir}/${pi.name}/build/source`, `${p.tmpDir}/build/source/`))))
   return act;
 }
 
