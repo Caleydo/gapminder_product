@@ -188,6 +188,7 @@ function downloadDataFile(desc, destDir, cwd) {
  * @returns a promise with the result code or a reject with the error string
  */
 function spawn(cmd, args, opts) {
+  console.log('command: ' + cmd);
   const spawn = require('child_process').spawn;
   const _ = require('lodash');
   return new Promise((resolve, reject) => {
