@@ -3,7 +3,7 @@
     "type": "web",
     "label": "gapminder",
     "repo": "Caleydo/gapminder",
-    "branch": "vstoiber/64_move_deploy",
+    "branch": "develop",
     "additional": []
   },
   {
@@ -37,7 +37,7 @@
       {
         "type": "repo",
         "repo": "Caleydo/gapminder",
-        "branch": "vstoiber/64_move_deploy"
+        "branch": "develop"
       }
     ]
   }
