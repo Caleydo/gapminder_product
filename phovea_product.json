@@ -27,11 +27,12 @@
         "branch": "develop"
       }
     },
-    "data": {
-      "repo": {
+    "data": [
+      {
+        "type": "repo",
         "repo": "Caleydo/gapminder",
         "branch": "develop"
       }
-    }
+    ]
   }
 }
