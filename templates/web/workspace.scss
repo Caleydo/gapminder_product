@@ -1,0 +1,17 @@
+@debug('import plugin scss variables');
+@import "~gapminder/dist/scss/abstracts/variables";
+@import "~phovea_vis/dist/scss/abstracts/variables";
+@import "~phovea_clue/dist/scss/abstracts/variables";
+@import "~phovea_security_flask/dist/scss/abstracts/variables";
+@import "~phovea_ui/dist/scss/abstracts/variables";
+@import "~@fortawesome/fontawesome-free/scss/variables";
+
+// import mixins
+@import "~@fortawesome/fontawesome-free/scss/mixins";
+
+@debug('import plugin main scss');
+@import "~phovea_ui/dist/scss/main";
+@import "~phovea_security_flask/dist/scss/main";
+@import "~phovea_clue/dist/scss/main";
+@import "~phovea_vis/dist/scss/main";
+@import "~gapminder/dist/scss/main";
