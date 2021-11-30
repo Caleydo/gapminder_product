@@ -1,15 +1,15 @@
 // Import custom theme variables and bootstrap variables overrides
-@import "~tdp_core/dist/scss/themes/phovea";
+@import "~phovea_ui/dist/scss/themes/phovea";
 // @import "~tdp_core/dist/scss/themes/datavisyn";
 
 // Include remainder of required Bootstrap stylesheets
-@import "~tdp_core/dist/scss/vendors/bootstrap/1_variables_mixins_utilities";
+@import "~phovea_ui/dist/scss/vendors/bootstrap/1_variables_mixins_utilities";
 
 // map-merge my theme-colors
 @import "~ordino/dist/scss/vendors/bootstrap_modify_maps";
 
 // Include all Bootstrap components as needed
-@import "~tdp_core/dist/scss/vendors/bootstrap/2_components";
+@import "~phovea_ui/dist/scss/vendors/bootstrap/2_components";
 
 @debug('import plugin scss variables');
 @import "~gapminder/dist/scss/abstracts/variables";
